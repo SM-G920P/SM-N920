@@ -10,7 +10,7 @@
 		  Ex)  CROSS_COMPILE=/usr/local/toolchain/arm-eabi-4.9/bin/arm-eabi-		// check the location of toolchain
   	
         - to Build
-          $ make ARCH=arm64 noblelte_mea_xsg_00_defconfig
+          $ make ARCH=arm64 noblelte_sea_dx_00_defconfig
           $ make ARCH=arm64
 
 2. Output files
