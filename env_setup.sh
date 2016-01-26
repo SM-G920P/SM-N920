@@ -102,6 +102,11 @@ if [ "$TARGET" = "N920P" ] ; then
 export KERNEL_CONFIG="SkyHigh_SM-N920P_Sprint_defconfig";
 fi;
 
+# SM-G920 P (Sprint)
+if [ "$TARGET" = "G920P" ] ; then
+export KERNEL_CONFIG="SkyHigh_SM-G920P_Sprint_defconfig";
+fi;
+
 # SM-N9200 (Hong Kong - dual SIM)
 if [ "$TARGET" = "N9200" ] ; then
 export KERNEL_CONFIG="SkyHigh_SM-N9200_HK_defconfig";
@@ -124,7 +129,8 @@ export TMPFILE=`mktemp -t`;
 
 
 # system compiler
-export CROSS_COMPILE=/home/buildserver/android/toolchains/gcc-linaro-4.9-2015.02-3-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+#https://releases.linaro.org/15.02/components/toolchain/binaries/aarch64-linux-gnu/
+export CROSS_COMPILE=~/Android/gcc-linaro-4.9-2015.02-3-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 
 # CPU Core
