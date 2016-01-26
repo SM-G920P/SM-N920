@@ -130,7 +130,7 @@ export TMPFILE=`mktemp -t`;
 
 # system compiler
 #https://releases.linaro.org/15.02/components/toolchain/binaries/aarch64-linux-gnu/
-export CROSS_COMPILE=~/Android/gcc-linaro-4.9-2015.02-3-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=~/android/toolchains/gcc-linaro-4.9-2015.02-3-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
 
 
 # CPU Core
