@@ -1,7 +1,6 @@
 on early-init
     symlink /data/tombstones /tombstones
     mkdir /cpdump 0771 system system
-    mkdir /efs 0771 radio system
 
 on post-fs-data
     mkdir /data/tombstones 0771 system system
@@ -128,9 +127,6 @@ on property:sys.boot_completed=1
     write /sys/module/mhi_uci/parameters/mhi_uci_dump 2
 
     write /sys/class/net/rmnet_mhi0/queues/rx-0/rps_cpus 1
-
-    chown root wifi /sys/bus/pci/drivers/mhi/0000:01:00.0/MHI_MOBILE_HOTSPOT
-    chmod 0664 /sys/bus/pci/drivers/mhi/0000:01:00.0/MHI_MOBILE_HOTSPOT
 
 on property:debug.mdm.cpboot_done=true
     start umount_cpdump

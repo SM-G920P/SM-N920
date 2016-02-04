@@ -45,8 +45,3 @@ service ril-daemon1 /system/bin/rild -c 2
     user root
     group radio cache inet misc audio log qcom_diag system drmrpc sdcard_r sdcard_rw diag
     disabled
-
-service atfwd /system/bin/ATFWD-daemon
-    class late_start
-    user system
-    group system radio
